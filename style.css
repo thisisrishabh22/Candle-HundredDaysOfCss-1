@@ -1,3 +1,6 @@
+body{
+    box-sizing: border-box;
+}
 #main .render{
     height: 100%;
     width: 100%;
@@ -9,6 +12,7 @@
     height: 400px;
     margin: auto;
     width: 400px;
+    box-shadow: 8px 8px 8px 0 rgb(74 100 164 / 40%);
 }
 
 
@@ -64,7 +68,96 @@
 }
 
 
+#info{
+    margin: -8px;
+    margin-top: 10rem;
+}
+#info .container{
+    height: 60vh;
+    margin: auto;
+    width: 100%;
+    background: #77aee6;
+    background: linear-gradient(200deg, #406BD8 0%, #9CDBEF 100%);
+}
+#info .container .content{
+    padding-top: 48px;
+    height: 40vh;
+    width: 500px;
+    margin-left: 60%;
+    display: inline;
+}
+#info .container .logo{
+    margin-left: calc(50% - 160px);
+}
+#info .container .number{
+    height: 80px;
+    width: 160px;
+    display: inline-block;
+}
+#info .container .one-1{
+    height: 36px;
+    width: 20px;
+    background: #fff;
+    border-radius: 6px;
+    transform: rotate(50deg);
+    display: inline-block;
+    position: absolute;
+    box-shadow: 2px 4px 8px 0 rgb(74 100 164 / 40%);
+    margin-left: -12px;
+    margin-right: 0;
+}
+#info .container .one-2{
+    height: 78px;
+    width: 24px;
+    background: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 2px 4px 8px 0 rgb(74 100 164 / 40%);
+    position: absolute;
+    
+    z-index: 9;
+}
+#info .container .logo .zero{
+    height: 38.095px;
+    width: 38.095px;
+    border: solid #fff 22px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 2px 4px 8px 0 rgb(74 100 164 / 40%);
+    position: absolute;
+    margin-left: 8px;
+    
+}
+#info .container .logo .zero.one{
+    z-index: 8;
+}
+#info .container .logo .zero.two{
+    margin-left: 70px;
+}
+#info .container .logo .text{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-shadow: 1px 2px 4px rgb(74 100 164 / 40%);
+    display: inline-block;
+    color: #fff;
+    height: 80px;
+    width: 180px;
+}
 
+#info .container .logo .text .big{
+    font-size: 76px;
+    line-height: 65px;
+    display: inline-block;
+}
+#info .container .logo .text .small{
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#info .container .content .btn-container{
+    display: grid;
+}
 /* A little Resposive Styling*/
 @media(max-width:568px){
     #main .background{
